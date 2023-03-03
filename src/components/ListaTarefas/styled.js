@@ -12,7 +12,7 @@ export const ListaTarefasContainer = styled.div`
   border-bottom-left-radius: 15px;
 `;
 
-export const InputContainer = styled.div`
+export const InputContainer = styled.form`
   padding: 2rem;
   width: 100%;
   background-color: #4e5abc;
@@ -72,3 +72,31 @@ export const LinhaHorizontal = styled.hr`
   width: 100%;
   margin: 16px;
 `
+
+
+export const Riscado = styled.p`
+  color:gray;
+  text-decoration:line-through;
+`
+export const ListaContainerDois = styled.div`
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  text-decoration:underline;
+`;
+
+export const TarefasConcluidas = styled.li`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  
+  border-radius:20px;
+  padding: 6px 8px;
+  transition: background-color 0.3s;
+  &:hover {
+    background-color: lightgray;
+    border-radius:20px;
+  }
+`;
